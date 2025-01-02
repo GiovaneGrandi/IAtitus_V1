@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>IAtitus - Menu</title>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/styles.css') }}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/home.css') }}"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<h1 id="titulo">IAtitus</h1>
+			<main>
+				<p>O que vamos explorar?</p>
+				<div class="options">
+					<button id="chatbot">Nova Conversa</button>
+					<button id="podcast">Gerar novo podcast</button>
+					<button id="newdocument">Adicionar Materiais</button>
+				</div>
+			</main>
+		</div>
+		<script src="{{ url_for('static', filename='js/home.js') }}"></script>
+	</body>
+</html>

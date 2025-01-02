@@ -1,0 +1,84 @@
+/* styles.css */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	text-align: center;
+	width: 90%;
+	max-width: 600px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+header h1 {
+	font-size: 2.5em;
+	margin: 0;
+}
+
+header .highlight {
+	color: #8a5dfa;
+}
+
+header .icons img {
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+}
+
+main p {
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+.options {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.options button {
+	background-color: #aaa;
+	color: #000;
+	border: none;
+	padding: 15px 20px;
+	border-radius: 5px;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	font-weight: bold;
+}
+
+.options button:hover {
+	background-color: #d6d6d6;
+}
+
+.options .icon {
+	margin-left: 10px;
+	font-size: 1.2em;
+	color: #4b4b4b;
+}
+
+#titulo {
+	position: relative;
+	font-size: 80px;
+	font-weight: bold;
+	background: linear-gradient(90deg, #712a89, #9854d7, #927db5);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

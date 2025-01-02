@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Load</title>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/styles.css') }}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/login.css') }}"
+		/>
+		<script>
+			window.onload = function () {
+				setTimeout(function () {
+					// Redireciona o usuário para outra página
+					window.location.href = "/home"; // Altere para o link desejado
+				}, 3000); // 3000ms = 3 segundos
+			};
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h1 id="titulo">IAtitus</h1>
+			<h2>Bem vindo {{ usuario if usuario else "Visitante" }}!</h2>
+		</div>
+	</body>
+</html>
